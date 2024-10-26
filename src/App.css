@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Certifique-se de importar a fonte no index.html */
+  background-color: #e6ecf0; /* Fundo claro */
+  color: #14171a; /* Texto escuro */
+}
+
+.App {
+  max-width: 600px; /* Largura máxima do feed */
+  margin: 0 auto; /* Centraliza o feed */
+  padding: 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #ffffff; /* Fundo do cabeçalho */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+header {
+  background-color: #61dafb;
+  padding: 20px;
+  border-bottom: 2px solid #282c34;
+}
+
+header h1 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #f9f9f9; /* Fundo suave para o cartão */
+  margin: 15px 0; /* Espaço entre os cartões */
+  padding: 15px;
+  border-radius: 12px; /* Bordas mais arredondadas */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.2s, box-shadow 0.2s; /* Transição suave */
+}
+
+li:hover {
+  transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold; /* Títulos em negrito */
+}
+
+p {
+  margin: 10px 0;
+  font-size: 0.9em; /* Tamanho de fonte menor para descrições */
+  color: #657786; /* Cor do texto da descrição */
+}
+
+a {
+  color: #1da1f2; /* Cor do link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline; /* Efeito de hover no link */
+}
+
+/* Estilo para botões */
+.button {
+  background-color: #1da1f2; /* Cor do botão */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #0d8bcf; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilo para a lista de notícias */
+.news-container {
+  max-width: 800px; /* Largura máxima do container */
+  margin: 0 auto; /* Centraliza o container */
+  padding: 20px; /* Espaçamento interno */
+}
+
+.news-title {
+  text-align: center; /* Centraliza o título */
+}
+
+.search-form {
+  display: flex; /* Usar flexbox para o formulário */
+  justify-content: center; /* Centraliza o formulário */
+  margin-bottom: 20px; /* Espaçamento abaixo do formulário */
+}
+
+.search-input {
+  padding: 10px; /* Espaçamento interno do input */
+  margin-right: 10px; /* Espaçamento à direita do input */
+  flex: 1; /* O input ocupa o espaço restante */
+}
+
+.search-button {
+  padding: 10px 20px; /* Espaçamento interno do botão */
+}
+
+.news-list {
+  list-style-type: none; /* Remove os marcadores da lista */
+  padding: 0; /* Remove o padding padrão */
+}
+
+.news-item {
+  margin-bottom: 20px; /* Espaçamento entre os itens */
+  border: 1px solid #ccc; /* Borda ao redor do item */
+  padding: 10px; /* Espaçamento interno do item */
+  border-radius: 5px; /* Bordas arredondadas */
+  overflow: hidden; /* Esconde o conteúdo que ultrapassa a altura */
+}
+
+.news-description {
+  display: -webkit-box; /* Usar box flexível */
+  -webkit-box-orient: vertical; /* Orientação vertical */
+  -webkit-line-clamp: 8; /* Limita a 8 linhas */
+  overflow: hidden; /* Esconde o conteúdo que ultrapassa */
+  text-overflow: ellipsis; /* Adiciona "..." ao final do texto que não cabe */
+  margin: 0; /* Remove margens */
+  color: #333; /* Cor do texto */
+}
+
+.trending-topics {
+  width: 250px; /* Largura fixa para a seção de trending topics */
+  position: sticky; /* Fixa a posição ao rolar */
+  top: 20px; /* Distância do topo da tela */
+  background-color: #f9f9f9; /* Cor de fundo */
+  border: 1px solid #ccc; /* Borda */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
